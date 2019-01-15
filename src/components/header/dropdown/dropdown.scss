@@ -1,0 +1,12 @@
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.dropdown-item {
+    display: flex;
+    justify-content: space-between;
+}

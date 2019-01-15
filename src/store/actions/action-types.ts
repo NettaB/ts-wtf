@@ -1,0 +1,1 @@
+export const TOGGLE_MAIN_DROPDOWN = 'toggle_main_dropdown';

@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+body, div, main, header, aside, nav, button, a, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+ul {
+  list-style: none;
+}
+
+$text-color: black;
+
+%a-base {
+  text-decoration: none;
+  color: $text-color;
+}
+
+a {
+  @extend %a-base;
+}
+
+a:hover {
+  @extend %a-base;
+  color: coral;
+}
+
+a:visited {
+  @extend %a-base;
+}
