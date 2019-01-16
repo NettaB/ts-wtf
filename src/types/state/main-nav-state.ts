@@ -1,4 +1,4 @@
-export interface MainNavState {
-    dropdownOpened: boolean;
-    sideMenuOpened: boolean;
-}
+// export interface MainNavState {
+//     dropdownOpened: boolean;
+//     sideMenuOpened: boolean;
+// }

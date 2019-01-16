@@ -1,1 +1,2 @@
-export const TOGGLE_MAIN_DROPDOWN = 'toggle_main_dropdown';
+export const FETCH_DATASETS = 'fetch_datasets';
+export const DATASETS_FETCHED = 'datasets_fetched';

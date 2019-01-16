@@ -1,6 +1,6 @@
 
-export interface StateProps {
-    dislayed: boolean;
-}
+// export interface StateProps {
+//     dislayed: boolean;
+// }
 
-export type Props = StateProps;
+// export type Props = StateProps;

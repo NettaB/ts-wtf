@@ -13,7 +13,7 @@ export class App extends React.Component {
                     <MainMenu />
                 </div>
                 <div className={'app-view'}>
-                     <Header />
+                     <Header displayDropdown={false} />
                     <div className={'dynmic-view'}>
                         <Switch>
                             <Route path={'/datasets'} component={ DatasetsComponent } />

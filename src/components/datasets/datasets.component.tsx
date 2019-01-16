@@ -1,13 +1,20 @@
 import React from 'react';
 import './datasets.scss';
-
+import { connect } from 'react-redux';
 import { Table } from 'react-bootstrap';
+//import { Props } from './datasets.props';
+import { State } from 'Types/state'
+import { fetchDatasets } from "Store/actions";
 
+ export class DatasetsComponent extends React.Component {
 
-export class DatasetsComponent extends React.Component {
+    componentDidMount() {
+        console.log(this.props)
+        //this.props.fetchDatasets();
+    }
 
     render() {
-
+        console.log(this.props)
         return (
             <Table className={'datasets-table'} striped bordered condensed hover responsive>
                 <thead>
@@ -57,3 +64,18 @@ export class DatasetsComponent extends React.Component {
 
     
 }
+
+
+const mapStateToProps = (state:State) => {
+    console.log('state', state)
+    return {
+      datasets: 'blav'
+    }
+  }
+
+
+  
+  
+  export default connect(mapStateToProps, {
+    fetchDatasets
+  })(DatasetsComponent);

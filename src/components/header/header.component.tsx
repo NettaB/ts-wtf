@@ -2,17 +2,30 @@ import React from 'react';
 import './header.scss';
 import { MainDropdown } from "./dropdown"; 
 
-export class Header extends React.Component {
+interface State {
+    displayDropdown: boolean
+}
+
+
+export class Header extends React.Component<State> {
+
+    state = {
+        displayDropdown: false
+    };
+
+
     toggleDropdown = () => {
-        console.log('dropdown');
-        this.renderDropdown() //idea is to toggle the dropdown with click... not there yet obvs
+       this.setState({
+            displayDropdown: !this.state.displayDropdown
+       })
     }
 
-    renderDropdown =() => {
+    renderDropdown = () => {
         return (
-            <MainDropdown />
+            <MainDropdown displayed={this.state.displayDropdown} />
         )
     }
+
 
     render() {
         return (
@@ -25,6 +38,7 @@ export class Header extends React.Component {
                             <div className={'text-nav-container nav-item'} onClick={this.toggleDropdown}>Lynx Research</div>
                         </div>                       
                     </div>
+                    {this.renderDropdown()}
                 </div>          
         )
     }

@@ -6,8 +6,9 @@ import * as actions from 'Store/actions';
 export default (state: {}, action: AnyAction) => {
 
     switch (action.type) {
-        case actions.TOGGLE_MAIN_DROPDOWN:
-            return action.payload;
+        case actions.DATASETS_FETCHED:
+            console.log('DATASETS_FETCHED in reducer!')
+            return { ...state, datasets:action.payload};
         default:
             return state;
     }

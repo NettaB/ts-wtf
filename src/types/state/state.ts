@@ -1,5 +1,6 @@
-import { MainNavState } from "./main-nav-state";
+//import { MainNavState } from "./main-nav-state";
 
 export interface State {
-    MainNavState: MainNavState;
+    //MainNavState: MainNavState;
+    foo: string
 }
